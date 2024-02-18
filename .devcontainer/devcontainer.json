@@ -26,8 +26,7 @@
 		},
 		"vscode": {
 			"extensions": [
-				"ms-azuretools.vscode-docker",
-				"trinhanhngoc.vscode-odoo"
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	},
