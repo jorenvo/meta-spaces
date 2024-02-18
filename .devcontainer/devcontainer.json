@@ -1,0 +1,34 @@
+{
+	"name": "Odoo & Postgres",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "odoo",
+	"portsAttributes": {
+		"8069": {
+			"label": "Odoo HTTP",
+			"onAutoForward": "notify"
+		}
+	},
+	"remoteUser": "odoo",
+	"customizations": {
+		"codespaces": {
+			"repositories": {
+				"jorenvo/odoo-spaces": {
+					"permissions": {
+						"contents": "write"
+					}
+				},
+				"jorenvo/enterprise-spaces": {
+					"permissions": {
+						"contents": "write"
+					}
+				}
+			}
+		},
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	},
+	"onCreateCommand": "bash on-create.sh"
+}
