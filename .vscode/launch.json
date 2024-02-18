@@ -8,7 +8,7 @@
             "name": "Odoo",
             "type": "debugpy",
             "request": "launch",
-            "program": "odoo-bin",
+            "program": "/workspaces/odoo-spaces/odoo-bin",
             "console": "integratedTerminal",
             "args": "${command:pickArgs}"
         }
